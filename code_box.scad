@@ -32,4 +32,8 @@ difference() {
     cube([ ( holeDiameter + thin ) * 2, holeDiameter + thin, hokyoHeight + thin ]);
     translate([ ( topWidth / 2 ) - ( holeDiameter + thin ), topLength, 0 ])
     cube([ ( holeDiameter + thin ) * 2, holeDiameter + thin, hokyoHeight + thin ]);
+    translate([ ( topWidth / 2 ) - ( holeDiameter + thin ), topLength - hokyoMargin, thin ])
+    cube([ ( holeDiameter + thin ) * 2, hokyoMargin, hokyoHeight ]);
+    translate([ ( topWidth / 2 ) - ( holeDiameter + thin ), 0, thin ])
+    cube([ ( holeDiameter + thin ) * 2, hokyoMargin, hokyoHeight ]);
 }
